@@ -1,6 +1,7 @@
-package racing;
+package racing.domain;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
@@ -36,7 +37,7 @@ public class Cars {
     }
 
     public List<Car> getCarList() {
-        return cars;
+        return Collections.unmodifiableList(cars);
     }
 
     public int size() {
